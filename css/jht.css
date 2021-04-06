@@ -1,0 +1,343 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+
+    font-family: 'EB Garamond', 'Constantia', 'Georgia', serif;
+    font-size: 100%;
+    color: #343434; /* Jet Black */
+    background-color: #FCFCFC; /* Off white */
+
+    /* Can't seem to get ligatures to work... */
+    -ms-font-feature-settings:     'smcp' 1, 'liga' 1;  /* IE10 */
+    -moz-font-feature-settings:    'smcp' 1, 'liga' 1;  /* Firefox */
+    -webkit-font-feature-settings: 'smcp' 1, 'liga' 1;  /* Chrome, Safari, Opera */
+    font-feature-settings:         'smcp' 1, 'liga' 1;  /* Future-proof! */
+}
+@media (max-width: 576px) {
+    body {
+        font-size: 110%;
+    }
+}
+
+.teaserimage {
+    -ms-interpolation-mode: bicubic;
+    margin: 40px auto;
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    max-width: 700px;
+}
+
+.hyphenate {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h2, .h2 {
+    font-weight: normal;
+    position: relative;
+    font-size: 2em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+section > h2 {
+    margin-bottom: 0.6em;
+}
+section > h2:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    display: block;
+    height: 3px;
+    background-color: hsl(347,100%,28%);
+    bottom: -8px;
+}
+
+h3, .h3 {
+    color: hsl(347,100%,18%);
+    font-weight: normal;
+    font-size: 1.5em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    margin-top: 1.5em;
+    margin-bottom: 0.3em;
+}
+
+th {
+    text-align: left;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+.totalrow {
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    border-top: 1px solid #ddd;
+}
+
+table {
+    table-layout: fixed;
+}
+
+td {
+    padding: 0.25em;
+    border: inherit;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.schedule {
+    border-bottom: 1px solid #ddd;
+}
+
+.schedulesection {
+    text-align: left;
+    padding-top: 1em;
+    padding-bottom: 0.2em;
+    border-bottom: 1px solid #ddd;
+}
+
+.sc {
+    font-family: 'EB Garamond SC', 'Constantia', 'Georgia', serif;
+    font-style: normal;
+    -moz-hyphens: none;
+    -webkit-hyphens: none;
+    -o-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    letter-spacing: 1px;
+}
+
+a:link {color: hsl(347,100%,35%); text-decoration: underline; }
+a:active {color: hsl(347,100%,30%); text-decoration: underline; }
+a:visited {color: hsl(347,100%,30%); text-decoration: underline; }
+a:hover {color: hsl(347,100%,32%); text-decoration: underline; }
+/* Force word-wrapping for long urls */
+a {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+/* Compensate for fixed header when jumping to a specific part of a page */
+:target:before {
+    content: '';
+    display: block;
+    height: 20px; /* fixed header height*/
+    margin: -20px 0 0; /* negative fixed header height */
+}
+
+/* Obfuscated email address */
+.cryptedmail:after {
+    content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
+}
+
+/* Nav skip styling -- copied from Boostrap */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* On keyboard focus, make nav skip link visible */
+.nav-skip:focus {
+    position: absolute;
+    opacity: 1;
+    clip: unset;
+    left: auto;
+    top: 70px;
+    width: 30%;
+    height: auto;
+    overflow: auto;
+    margin: 0 35%;
+    padding: 5px;
+    font-size: 20px;
+    outline: 3px solid blue;
+    background-color: white;
+    text-align: center;
+    z-index: 999;
+}
+
+/* Improve navbar text contrast */
+#navbar a {
+    color: hsl(0,0%,87%);
+    text-decoration: none;
+}
+#navbar a.active {
+    color: hsl(0,0%,96%);
+    text-decoration: underline;
+}
+
+
+/* Other Styles */
+header {
+    text-align: center;
+}
+header > h2 {
+    margin-top: 1em;
+    font-size: 2em;
+}
+@media (max-width: 768px) {
+    header > h1 {
+        font-size: 2em;
+    }
+    header > h2 {
+        margin-top: 0em;
+        font-size: 1.5em;
+    }
+}
+
+main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 900px;
+    width: 95%;
+}
+
+table {
+    display: block;
+    overflow-x: auto;
+}
+
+.center-contents {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media screen and (min-width: 768px) {
+    .mobile {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 767px) {
+    .not-mobile {
+        display: none !important;
+    }
+}
+
+/* Markdown Customizations */
+main.markdown-body {
+    font-family: 'EB Garamond', 'Constantia', 'Georgia', serif;
+    max-width: 700px;
+}
+.markdown-body a:link {color: hsl(347,100%,35%); text-decoration: underline; }
+.markdown-body a:active {color: hsl(347,100%,30%); text-decoration: underline; }
+.markdown-body a:visited {color: hsl(347,100%,30%); text-decoration: underline; }
+.markdown-body a:hover {color: hsl(347,100%,32%); text-decoration: underline; }
+main > aside#table-of-contents a {  text-decoration: none;}
+main > aside#table-of-contents {
+    display: block;
+    font-size: 85%;
+    padding: 10px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    background-color:hsl(0,0%,97%);
+    width: 225px;
+}
+main > aside#table-of-contents ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+main > aside#table-of-contents > ul {
+    /* get rid of unecessary padding for outermost ul */
+    padding-left: 0;
+}
+main > aside#table-of-contents li {
+    margin: 0;
+    padding: 3px 0;
+    border-top: 1px solid hsl(0,0%,85%);
+}
+main > aside#table-of-contents li.active {
+    padding-left: 5px;
+    background-color:hsl(0,0%,92%);
+}
+@media screen and (max-width: 1200px) {
+    main > aside#table-of-contents {
+        width: 15vw;
+        font-size: 80%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    main > aside#table-of-contents {
+        display: none;
+    }
+}
+
+/* Breadcrumbs styling */
+main nav.breadcrumbs ol {
+    list-style: none;
+    padding: 0;
+}
+main nav.breadcrumbs li {
+    display: inline-block;
+}
+/* Add a slash symbol (/) between each list item */
+main nav.breadcrumbs li+li:before {
+    padding: 4px;
+    color: black;
+    content: "/\00a0";
+}
+
+/* Staff pictures styling */
+#instructors-container, #htas-container, #tas-container, #stas-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div.staff {
+    border-radius: 5px;
+    width: 260px;
+    margin: 10px;
+    padding: 20px;
+    padding-bottom: 15px;
+    overflow: hidden;
+    color: var(--dark-blue);
+    background-color: var(--accent-yellow);
+}
+
+div.staff img.staff-pic {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+div.staff .staff-text p {
+    text-align: center;
+    line-height: unset;
+    margin: 5px 0;
+}
