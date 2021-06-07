@@ -36,14 +36,16 @@
 What does it mean to conduct research in computer science, and how might we be most effective at it?
 To help you begin a fruitful career in CS research, this class will cover the philosophy and practice of forming ideas, executing research, presenting outcomes, and more broadly understanding and contributing to our community. 
 This class also aims to kick-start your time at Brown CS by being the 'missing semester' on _how to be a PhD student_, and by peeling back the curtain on _why CS academia works like this_ to help you make the most of your time. 
+
 Discussions will include: 
-motivating, pitching, and funding research; 
-finding, reading, and reviewing research; 
-selecting research areas and forming hypotheses; 
-designing, performing, and evaluating research; 
-communicating research;
-research collaborations; and 
-research ethics.
+- motivating, pitching, and funding research; 
+- finding, reading, and reviewing research; 
+- selecting research areas and forming hypotheses; 
+- designing, performing, and evaluating research; 
+- communicating research;
+- research collaborations; and 
+- research ethics.
+
 We will learn together through presentations, activities, and discussions in class time, along with readings and assignments out of class.
 
 
