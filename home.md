@@ -65,7 +65,7 @@ Upon completion of this course, students will:
 
 ### Prerequisites
 
-None.
+Enrolled in CS PhD program.
 
 ### Time Commitment
 
