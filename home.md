@@ -2,7 +2,7 @@
 
 <header>
 
-# CSCI 2000: Research Methods
+# CSCI 2000: CS Research Methods
 # or 'How to be a CS PhD Student'
 
 <span class="h2">Fall 2021, Friday 2pm EST<br/>Synchronous only, TBD.</span>
@@ -33,9 +33,19 @@
 
 ## Course Description
 
-This class will be about computer science research, with the goal of being about to conduct research independently from idea formulation to performing the work to presenting the outcomes. Topics include: selecting research topics, finding research papers, motivating research, designing research procedures, performing research experiments, producing research, evaluating research, describing research, research collaborations, reading research papers, reporting research, visualizing research results, pitching research, reviewing research papers, research ethics, funding research. Teaching will be done through a lecture + discussion format, reading + discussion, along with in‐class activities and assignments. Students will be encouraged to incorporate their own research topics into the class activities and assignments, for example by designing evaluation procedures for ideas in their own research area.
+What does it mean to conduct research in computer science, and how might we be most effective at it?
+To help you begin a fruitful career in CS research, this class will cover the philosophy and practice of forming ideas, executing research, presenting outcomes, and more broadly understanding and contributing to our community. 
+This class also aims to kick-start your time at Brown CS by being the 'missing semester' on _how to be a PhD student_, and by peeling back the curtain on _why CS academia works like this_ to help you make the most of your time. 
+Discussions will include: 
+motivating, pitching, and funding research; 
+finding, reading, and reviewing research; 
+selecting research areas and forming hypotheses; 
+designing, performing, and evaluating research; 
+communicating research;
+research collaborations; and 
+research ethics.
+We will learn together through presentations, activities, and discussions in class time, along with readings and assignments out of class.
 
-This course is designed for your benefit, to help you prepare for a fruitful career in computer science research.
 
 <!--
 ### Learning Objectives
