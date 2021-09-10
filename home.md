@@ -5,7 +5,7 @@
 # CSCI 2000: CS Research Methods
 # or 'How to be a CS PhD Student'
 
-<span class="h2">Fall 2021, Friday 3pm EST<br/>Synchronous only, TBD.</span><br>
+<span class="h2">Fall 2021, Friday 3pm EST<br/>Synchronous only, CIT 101.</span><br>
 Note: Later classes may be at 2pm to fit with TGIF; please come to first class on Fri 10th Sept at 3pm.
 
 </header>
